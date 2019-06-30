@@ -30,6 +30,8 @@
 .slogan {
   font-family: 'bilboregular';
   padding-top: 26px;
+  text-align: center;
+  font-size: 18px;
 }
 
 .credits {
@@ -70,10 +72,19 @@ hr {
 h1 {
   font-family: 'Cinzel', serif;
   font-weight: 1;
+  margin-left: 10px;
   }
 
 h2 {
   font-family: 'Bad Script', cursive;
   font-weight: 100;
   letter-spacing: -1.5px;
+  margin-left: 10px;
+}
+
+.next-quote {
+  font-family: 'bilboregular';
+  color:#f84342;
+  font-size: 20px;
+  font-weight: 1000;
 }

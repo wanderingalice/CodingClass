@@ -21,10 +21,10 @@
           Quotes
         </div>
       </div>
-      <div class="col-4 slogan">
+      <div class="col-6 slogan">
         Giving you the oaths of the Kights Radiant since 2019
       </div>
-      <div class="col-5 links">
+      <div class="col-3 links">
         <%= link_to 'Contribute', '#' %>
         &nbsp; &nbsp; &nbsp;
         <%= link_to 'About', '#' %>
@@ -35,6 +35,23 @@
     <br class="clear" />
 
     <%= yield %>
+
+    <div class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12"><%= link_to "This isn't enough, I need more", "#", class: 'next-quote' %></div>
+          <div class="col-6 footer-credits"> 
+            <br />
+            All quotes by Brandon Sanderson, and can be found in The Stormlight Archive novels
+          </div>
+          <div class="col-6 footer-blurb">
+            Proudly hacked by <a href="https://alicecode.netlify.com">Alice Duff</a>
+            <br />
+            Want to build your own Splurty Web App? <a href="http://online.bootcampspot.com">Learn how to code here</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </body>
 </html>
