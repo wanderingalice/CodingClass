@@ -1,4 +1,7 @@
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bad+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap');
 
 .clear {
   clear: both;
@@ -25,13 +28,22 @@
 }
 
 .slogan {
-  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
-  font-style: italic;
+  font-family: 'bilboregular';
   padding-top: 26px;
+}
+
+.credits {
+  font-family: 'bilboregular';
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
 }
 
 .links {
   padding-top: 26px;
+  font-family: 'Cinzel Decorative', cursive;
+  letter-spacing: -2.5px;
 }
 
 .links a {
@@ -47,4 +59,21 @@ header {
 
 hr {
   clear:both;
+}
+
+.welcome {
+  font-family: 'Cinzel Decorative', cursive;
+  font-weight: 1000;
+  letter-spacing: 1.5px;
+  }
+
+h1 {
+  font-family: 'Cinzel', serif;
+  font-weight: 1;
+  }
+
+h2 {
+  font-family: 'Bad Script', cursive;
+  font-weight: 100;
+  letter-spacing: -1.5px;
 }
