@@ -12,6 +12,7 @@
   <body>
     <header class="row">
       <div class="col-3">
+        <%= link_to root_path, class: 'logo' do %>
         <div class="circle">
           <br />
           Stormlight
@@ -20,12 +21,13 @@
           <br />
           Quotes
         </div>
+      <% end %>
       </div>
       <div class="col-6 slogan">
         Giving you the oaths of the Kights Radiant since 2019
       </div>
       <div class="col-3 links">
-        <%= link_to 'Contribute', '#' %>
+        <%= link_to 'Contribute', new_quote_path %>
         &nbsp; &nbsp; &nbsp;
         <%= link_to 'About', '#' %>
     </header>
@@ -39,7 +41,7 @@
     <div class="footer">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-12"><%= link_to "This isn't enough, I need more", "#", class: 'next-quote' %></div>
+          <div class="col-12"><%= link_to "Let's see another one", root_path, class: 'next-quote' %></div>
           <div class="col-6 footer-credits"> 
             <br />
             All quotes by Brandon Sanderson, and can be found in The Stormlight Archive novels
