@@ -97,3 +97,40 @@ h2 {
   font-family: 'bilboregular';
   text-align: center;
 }
+
+.mainbody {
+  margin-left: 5%;
+}
+
+@media (max-width: 750px) {
+  .footer-blurb {
+  text-align: left;
+  }
+}
+
+.modal-body {
+  font-family: 'Cinzel', serif;
+}
+
+.modal-title {
+  font-family: 'Cinzel Decorative', cursive;
+  font-weight: 700;
+}
+
+.quotecounter{
+  font-family: 'Bad Script', cursive;
+  letter-spacing: 1.5px;
+  color:#33334d;
+}
+
+.set-container {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  @include make-container();
+}
+
+::selection {
+  background-color: #093273;
+  color: #FFFFFF;
+}

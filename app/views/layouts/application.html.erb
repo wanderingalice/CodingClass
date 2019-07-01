@@ -21,9 +21,9 @@
           </div>
           <div class="modal-body">
               <%= simple_form_for Quote.new do |f| %>
-              <%= f.input :saying %>
+              <%= f.input :saying, label: "Say the words", placeholder: "Life Before Death, Strength Before Weakness, Journey Before Destination" %>
               <br />
-              <%= f.input :author %>
+              <%= f.input :author, label: "What order is this Ideal from?", placeholder: "First Ideal of the Knights Radiant" %>
               <br />
               
           </div>
@@ -35,10 +35,12 @@
         </div>
       </div>
     </div>
+    <!--- End of Modal --->
 
   <body>
+    <div class="containter">
     <header class="row">
-      <div class="col-3">
+      <div class="col-3 text-center">
         <%= link_to root_path, class: 'logo' do %>
         <div class="circle">
           <br />
@@ -50,7 +52,7 @@
         </div>
       <% end %>
       </div>
-      <div class="col-6 slogan">
+      <div class="col-6 hidden-xs-down slogan">
         Giving you the oaths of the Kights Radiant since 2019
       </div>
       <div class="col-3 links">
@@ -59,7 +61,7 @@
         &nbsp; &nbsp; &nbsp;
         <%= link_to 'About', about_path %>
     </header>
-
+  </div>
     <hr />
 
     <br class="clear" />
@@ -73,6 +75,7 @@
 
     <%= yield %>
   </div>
+  
 
     <div class="footer">
       <div class="container-fluid">
@@ -89,7 +92,8 @@
           </div>
         </div>
       </div>
-    </div>
+    
 
+  </div>
   </body>
 </html>
